@@ -8,10 +8,10 @@
 import Foundation
 import SwiftUI
 
-class DynamicIsland {
+private class DynamicIsland {
     
-    static let standardWidth: CGFloat = 125
-    static let standardHeigth: CGFloat = 35
+    static let width: CGFloat = 125
+    static let heigth: CGFloat = 35
     
     private init() {}
     
@@ -23,7 +23,7 @@ class DynamicIsland {
         @Binding var isPresented: Bool
         func body(content: Content) -> some View {
             content
-                .frame(width: isPresented ? DynamicIsland.islandExpandedSize :125, height: isPresented ? 200:35)
+                .frame(width: isPresented ? DynamicIsland.islandExpandedSize:DynamicIsland.width, height: isPresented ? 200:DynamicIsland.heigth)
         }
     }
     
@@ -31,7 +31,7 @@ class DynamicIsland {
         @Binding var isPresented: Bool
         func body(content: Content) -> some View {
             content
-                .frame(width: isPresented ? DynamicIsland.islandExpandedSize :125, height: isPresented ? 90:35)
+                .frame(width: isPresented ? DynamicIsland.islandExpandedSize:DynamicIsland.width, height: isPresented ? 90:DynamicIsland.heigth)
         }
     }
     
@@ -39,7 +39,7 @@ class DynamicIsland {
         @Binding var isPresented: Bool
         func body(content: Content) -> some View {
             content
-                .frame(width: isPresented ? 140:125, height: isPresented ? 140:35)
+                .frame(width: isPresented ? 140:DynamicIsland.width, height: isPresented ? 140:DynamicIsland.heigth)
         }
     }
 }

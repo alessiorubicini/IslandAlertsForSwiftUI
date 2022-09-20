@@ -83,7 +83,7 @@ public struct IslandLargeAlert: ViewModifier {
 
 extension View {
     
-    /// A large-sized alert expanding from Dynamic Island with cancel and confirmation buttons
+    /// A large  alert expanding from Dynamic Island with cancel and confirmation buttons
     /// - Parameters:
     ///   - isPresented: A binding to a Boolean value that determines whether to present the alert. When the user presses or taps one of the Cancel action, the system sets this value to false and dismisses.
     ///   - title: A text string used as the title of the alert.

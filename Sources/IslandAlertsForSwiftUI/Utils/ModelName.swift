@@ -11,6 +11,8 @@ import SystemConfiguration
 import UIKit
 
 public extension UIDevice {
+    
+    // Returns the model name of the current device
     static let modelName: String = {
         var systemInfo = utsname()
         uname(&systemInfo)

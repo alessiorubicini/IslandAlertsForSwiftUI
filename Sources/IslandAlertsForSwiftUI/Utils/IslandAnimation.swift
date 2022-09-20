@@ -20,6 +20,7 @@ public struct IslandAnimation: ViewModifier {
 }
 
 extension View {
+    // Pop and blur animation for Dynamic Island shrinking
     public func islandAnimation(isPresented: Binding<Bool>) -> some View {
         ModifiedContent(content: self, modifier: IslandAnimation(isPresented: isPresented))
     }

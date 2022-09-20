@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class Notch {
+private class Notch {
     
     private init() {}
     

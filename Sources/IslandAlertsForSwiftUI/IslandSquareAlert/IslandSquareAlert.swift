@@ -63,7 +63,7 @@ public struct IslandSquareAlert: ViewModifier {
 }
 
 extension View {
-    /// A small-size alert expanding into a square from the Dynamic Island
+    /// A small-size alert expanding into a square from the Dynamic Island. It's dismissed by tapping on it.
     /// - Parameters:
     ///   - isPresented: A binding to a Boolean value that determines whether to present the alert. When the user presses or taps one of the Cancel action, the system sets this value to false and dismisses.
     ///   - systemIcon: The name of the system symbol image. Use the SF Symbols app to look up the names of system symbol images.
