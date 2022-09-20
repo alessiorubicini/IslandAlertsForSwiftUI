@@ -17,6 +17,8 @@ public struct IslandSquareAlertExample: View {
                 alert.toggle()
             }
         }
+        .buttonStyle(.borderedProminent)
+        
         .islandSquareAlert(isPresented: $alert, systemIcon: "faceid", text: "Login")
     }
 }
@@ -24,5 +26,6 @@ public struct IslandSquareAlertExample: View {
 struct IslandSquareAlertExample_Previews: PreviewProvider {
     static var previews: some View {
         IslandSquareAlertExample()
+            .previewDevice(PreviewDevice(rawValue: "iPhone 14 Pro"))
     }
 }

@@ -17,12 +17,17 @@ public struct IslandLargeAlertExample: View {
                 alert.toggle()
             }
         }
-        .islandLargeAlert(isPresented: $alert, title: "Hello, Island", message: "This is a test for the brand new Swift package from Alessio Rubicini.")
+        .buttonStyle(.borderedProminent)
+        
+        .islandLargeAlert(isPresented: $alert, title: "Hi! Alert!", message: "This is a test for presenting an alert from the Dynamic Island.", action: {
+            alert.toggle()
+        })
     }
 }
 
 struct IslandLargeAlertExample_Previews: PreviewProvider {
     static var previews: some View {
         IslandLargeAlertExample()
+            .previewDevice(PreviewDevice(rawValue: "iPhone 14 Pro"))
     }
 }

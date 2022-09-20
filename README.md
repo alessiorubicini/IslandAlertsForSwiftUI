@@ -4,11 +4,11 @@
 
 ## Types of alert
 
-- **[IslandLargeAlert](Sources/IslandAlertsForSwiftUI/IslandLargeAlert)**: an alert that from Dynamic Island expands completely on all three sides
-- **[IslandMediumAlert](Sources/IslandAlertsForSwiftUI/IslandMediumAlert)**: an alert that from Dynamic Island slightly expands to show some information 
-- **[IslandSquareAlert](Sources/IslandAlertsForSwiftUI/IslandSquareAlert)**: an alert that from the Dynamic Island only expands downwards forming a square
-- **[NotchLargeAlert](Sources/IslandAlertsForSwiftUI/NotchLargeAlert)**: an alert that from the Notch only expands on all sides, filling the top of the screen
-- **[NotchMediumAlert](Sources/IslandAlertsForSwiftUI/NotchMediumAlert)**: an alert that from Dynamic Island slightly expands to show some information 
-- **[NotchSquareAlert](Sources/IslandAlertsForSwiftUI/NotchSquareAlert)**: an alert that from the Notch expands only downwards forming a square
+- **[IslandLargeAlert](Sources/IslandAlertsForSwiftUI/IslandLargeAlert)**: a large-size alert expanding from Dynamic Island with cancel and confirmation buttons
+- **[IslandMediumAlert](Sources/IslandAlertsForSwiftUI/IslandMediumAlert)**: a medium-size alert expanding into a top rectangle from the Dynamic Island, useful for small updates
+- **[IslandSquareAlert](Sources/IslandAlertsForSwiftUI/IslandSquareAlert)**: a small-size alert expanding into a square from the Dynamic Island, useful for quick animations
+- **[NotchLargeAlert](Sources/IslandAlertsForSwiftUI/NotchLargeAlert)**: same of IslandLargeAlert but for Notch
+- **[NotchMediumAlert](Sources/IslandAlertsForSwiftUI/NotchMediumAlert)**: same of IslandMediumAlert but for Notch
+- **[NotchSquareAlert](Sources/IslandAlertsForSwiftUI/NotchSquareAlert)**: same of IslandSquareAlert but for Notch
 
 

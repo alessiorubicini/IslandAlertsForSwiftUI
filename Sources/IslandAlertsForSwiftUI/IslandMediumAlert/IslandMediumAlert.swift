@@ -13,7 +13,6 @@ public struct IslandMediumAlert: ViewModifier {
     
     let systemIcon: String
     let title: String
-    let message: String
 
     public func body(content: Content) -> some View {
         ZStack {
@@ -32,6 +31,7 @@ public struct IslandMediumAlert: ViewModifier {
                         
                         Text(title).font(.headline)
                             .foregroundColor(.gray)
+                            .lineLimit(1)
                             .multilineTextAlignment(.center)
                             .padding(.top, 30)
                         
@@ -54,13 +54,13 @@ public struct IslandMediumAlert: ViewModifier {
                     }
                     
                 }
+                .islandAnimation(isPresented: $isPresented)
                 .islandMediumFrame(isPresented: $isPresented)
                 .background(Rectangle()
                     .islandMediumFrame(isPresented: $isPresented)
                     .foregroundColor(Color.black)
                     .cornerRadius(isPresented ? 40 : 20)
                     .padding(.top, 22))
-                
                 Spacer()
                 
             }.edgesIgnoringSafeArea(.vertical)
@@ -72,13 +72,19 @@ public struct IslandMediumAlert: ViewModifier {
 }
 
 extension View {
-    public func islandMediumAlert(isPresented: Binding<Bool>, systemIcon: String, title: String, message: String) -> some View {
-        ModifiedContent(content: self, modifier: IslandMediumAlert(isPresented: isPresented, systemIcon: systemIcon, title: title, message: message))
+    /// A medium-size alert expanding into a top rectangle from the Dynamic Island
+    /// - Parameters:
+    ///   - isPresented: A binding to a Boolean value that determines whether to present the alert. When the user presses or taps one of the Cancel action, the system sets this value to false and dismisses.
+    ///   - systemIcon: The name of the system symbol image. Use the SF Symbols app to look up the names of system symbol images.
+    ///   - text: A text string used as the text of the alert.
+    public func islandMediumAlert(isPresented: Binding<Bool>, systemIcon: String, title: String) -> some View {
+        ModifiedContent(content: self, modifier: IslandMediumAlert(isPresented: isPresented, systemIcon: systemIcon, title: title))
     }
 }
 
 struct IslandMediumAlertDebug_Previews: PreviewProvider {
     static var previews: some View {
         IslandMediumAlertExample()
+            .previewDevice(PreviewDevice(rawValue: "iPhone 14 Pro"))
     }
 }

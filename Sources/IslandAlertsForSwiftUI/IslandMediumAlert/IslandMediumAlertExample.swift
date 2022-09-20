@@ -17,12 +17,15 @@ public struct IslandMediumAlertExample: View {
                 alert.toggle()
             }
         }
-        .islandMediumAlert(isPresented: $alert, systemIcon: "airpodspro", title: "Airpods connected", message: "Alessio's airpods connected")
+        .buttonStyle(.borderedProminent)
+        
+        .islandMediumAlert(isPresented: $alert, systemIcon: "airpodspro", title: "Airpods connected")
     }
 }
 
 struct IslandMediumAlertExample_Previews: PreviewProvider {
     static var previews: some View {
         IslandMediumAlertExample()
+            .previewDevice(PreviewDevice(rawValue: "iPhone 14 Pro"))
     }
 }
