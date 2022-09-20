@@ -4,10 +4,10 @@
 
 ## Parameters
 
-    - **isPresented**: A binding to a Boolean value that determines whether to present the alert. When the user presses or taps one of the Cancel action, the system sets this value to false and dismisses.
-    - **title**: A text string used as the title of the alert.
-    - **message**: A text string used as the message of the alert, maximum 3 lines of text after which it is truncated
-    - **action**: function performed when the Confirm button is pressed
+- **isPresented**: A binding to a Boolean value that determines whether to present the alert. When the user presses or taps one of the Cancel action, the system sets this value to false and dismisses.
+- **title**: A text string used as the title of the alert.
+- **message**: A text string used as the message of the alert, maximum 3 lines of text after which it is truncated
+- **action**: function performed when the Confirm button is pressed
 
 ## Code
 
