@@ -34,7 +34,7 @@ public struct NotchLargeAlert: ViewModifier {
                         }.foregroundColor(.white)
                         .multilineTextAlignment(.center)
                         
-                        VStack {
+                        HStack {
                             Button(role: .destructive, action: {
                                 withAnimation {
                                     isPresented.toggle()
@@ -62,7 +62,7 @@ public struct NotchLargeAlert: ViewModifier {
                 .background(Rectangle()
                     .notchLargeFrame(isPresented: $isPresented)
                     .foregroundColor(Color.black)
-                    .cornerRadius(isPresented ? 20:30)
+                    .cornerRadius(isPresented ? 20:30, corners: [.bottomLeft, .bottomRight])
                     .padding(.bottom, isPresented ? 10:0))
                 
                 

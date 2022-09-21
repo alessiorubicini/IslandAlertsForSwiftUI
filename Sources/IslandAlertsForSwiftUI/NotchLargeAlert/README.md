@@ -1,6 +1,6 @@
 #  Notch Large Alert
 
-> A large-size alert expanding from the top notch with cancel and confirmation buttons
+> A large-size alert expanding completely from the top notch with cancel and confirmation buttons
 
 Compatible both with larger notch (iPhone 12 or older) and reduced notch (iPhone 13 or older).
 

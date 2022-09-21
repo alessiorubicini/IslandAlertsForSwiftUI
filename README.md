@@ -20,8 +20,8 @@ Let's not leave our dear old Notch behind!
 
 The package includes the same animations also for the Notch. They may not be as beautiful, but they are useful!
 
-- **[NotchLargeAlert](Sources/IslandAlertsForSwiftUI/NotchLargeAlert)**: same of IslandLargeAlert but for Notch
-- **[NotchMediumAlert](Sources/IslandAlertsForSwiftUI/NotchMediumAlert)**: same of IslandMediumAlert but for Notch
+- **[NotchLargeAlert](Sources/IslandAlertsForSwiftUI/NotchLargeAlert/README.md)**: same of IslandLargeAlert but for Notch
+- **[NotchMediumAlert](Sources/IslandAlertsForSwiftUI/NotchMediumAlert/README.md)**: same of IslandMediumAlert but for Notch
 
 ## Installation
 

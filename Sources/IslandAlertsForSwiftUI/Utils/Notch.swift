@@ -25,7 +25,7 @@ private class Notch {
         @Binding var isPresented: Bool
         func body(content: Content) -> some View {
             content
-                .frame(width: Notch.width, height: isPresented ? 260:30)
+                .frame(width: isPresented ? UIScreen.main.bounds.width : Notch.width-3, height: isPresented ? 210:30)
         }
     }
     
@@ -33,7 +33,7 @@ private class Notch {
         @Binding var isPresented: Bool
         func body(content: Content) -> some View {
             content
-                .frame(width: Notch.width, height: isPresented ? 150:30)
+                .frame(width: isPresented ? Notch.width : Notch.width-2, height: isPresented ? 150:28)
         }
     }
 }

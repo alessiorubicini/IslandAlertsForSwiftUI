@@ -47,7 +47,7 @@ struct NotchMediumAlert: ViewModifier {
                 .background(Rectangle()
                     .notchMediumFrame(isPresented: $isPresented)
                     .foregroundColor(Color.black)
-                    .cornerRadius(isPresented ? 20:30)
+                    .cornerRadius(isPresented ? 20:30, corners: [.bottomLeft, .bottomRight])
                     .padding(.bottom, isPresented ? 10:0))
                 
                 Spacer()
