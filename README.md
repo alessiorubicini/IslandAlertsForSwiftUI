@@ -1,16 +1,20 @@
 # IslandAlertsForSwiftUI
 
-![Presentation](Resources/IslandAlertsForSwiftUI.png)
+> IslandAlertsForSwiftUI provides a variety of SwiftUI alerts that integrate perfectly with iPhone’s Dynamic Island and Notch!
 
 ## Types of alert
 
 ### Dynamic Island
+
+![IslandAlerts](Resources/IslandAlerts.png)
 
 - **[IslandLargeAlert](Sources/IslandAlertsForSwiftUI/IslandLargeAlert/README.md)**: a large-size alert expanding from Dynamic Island with cancel and confirmation buttons
 - **[IslandMediumAlert](Sources/IslandAlertsForSwiftUI/IslandMediumAlert/README.md)**: a medium-size alert expanding into a top rectangle from the Dynamic Island, useful for small updates
 - **[IslandSquareAlert](Sources/IslandAlertsForSwiftUI/IslandSquareAlert/README.md)**: a small-size alert expanding into a square from the Dynamic Island, useful for quick animations
 
 ### Notch
+
+![IslandAlerts](Resources/NotchAlerts.png)
 
 Let's not leave our dear old Notch behind!
 
@@ -26,7 +30,7 @@ Required:
 - Xcode 13.0 or above
 
 In Xcode go to `File -> Add Packages...` and paste in the repo's url: `https://github.com/alessiorubicini/IslandAlertsForSwiftUI`.
-
+f
 
 ## License
 
