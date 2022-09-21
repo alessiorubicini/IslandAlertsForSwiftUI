@@ -25,7 +25,15 @@ private class Notch {
         @Binding var isPresented: Bool
         func body(content: Content) -> some View {
             content
-                .frame(width: isPresented ? Notch.width : Notch.width, height: isPresented ? 280:30)
+                .frame(width: Notch.width, height: isPresented ? 260:30)
+        }
+    }
+    
+    struct NotchMediumFrame: ViewModifier {
+        @Binding var isPresented: Bool
+        func body(content: Content) -> some View {
+            content
+                .frame(width: Notch.width, height: isPresented ? 150:30)
         }
     }
 }
@@ -33,5 +41,8 @@ private class Notch {
 extension View {
     func notchLargeFrame(isPresented: Binding<Bool>) -> some View {
         ModifiedContent(content: self, modifier: Notch.NotchLargeFrame(isPresented: isPresented))
+    }
+    func notchMediumFrame(isPresented: Binding<Bool>) -> some View {
+        ModifiedContent(content: self, modifier: Notch.NotchMediumFrame(isPresented: isPresented))
     }
 }

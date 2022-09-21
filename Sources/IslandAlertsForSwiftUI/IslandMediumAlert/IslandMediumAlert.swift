@@ -9,8 +9,8 @@ import Foundation
 import SwiftUI
 
 public struct IslandMediumAlert: ViewModifier {
-    @Binding var isPresented: Bool
     
+    @Binding var isPresented: Bool
     let systemIcon: String
     let title: String
 

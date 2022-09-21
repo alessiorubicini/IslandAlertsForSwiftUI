@@ -25,13 +25,11 @@ public struct NotchLargeAlert: ViewModifier {
                         Group {
                             
                             Text(title).font(.headline)
-                                .padding(.top, 30)
-                                
                             
                             Text(message)
                                 .lineLimit(3)
                                 .padding(.top, 5)
-                                .padding(.horizontal, 30)
+                                .padding(.horizontal, 20)
                             
                         }.foregroundColor(.white)
                         .multilineTextAlignment(.center)

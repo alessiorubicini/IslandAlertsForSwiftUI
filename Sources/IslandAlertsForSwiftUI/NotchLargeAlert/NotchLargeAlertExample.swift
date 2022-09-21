@@ -17,7 +17,7 @@ public struct NotchLargeAlertExample: View {
                 alert.toggle()
             }
         }
-        .notchLargeAlert(isPresented: $alert, title: "Hello, Island", message: "This is a test for the brand new Swift package from Alessio Rubicini.", action: {
+        .notchLargeAlert(isPresented: $alert, title: "Hello, Island", message: "This is a test for the new Notch alert.", action: {
             alert.toggle()
         })
     }
@@ -26,6 +26,6 @@ public struct NotchLargeAlertExample: View {
 struct NotchLargeAlertExample_Previews: PreviewProvider {
     static var previews: some View {
         NotchLargeAlertExample()
-            .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro"))
+            .previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro"))
     }
 }

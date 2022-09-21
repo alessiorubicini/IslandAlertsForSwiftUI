@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct IslandMediumAlertExample: View {
+struct IslandMediumAlertExample: View {
     
     @State private var alert = false
     
