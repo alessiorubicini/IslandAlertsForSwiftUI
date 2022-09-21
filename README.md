@@ -19,4 +19,19 @@ The package includes the same animations also for the Notch. They may not be as 
 - **[NotchLargeAlert](Sources/IslandAlertsForSwiftUI/NotchLargeAlert)**: same of IslandLargeAlert but for Notch
 - **[NotchMediumAlert](Sources/IslandAlertsForSwiftUI/NotchMediumAlert)**: same of IslandMediumAlert but for Notch
 
+## Installation
 
+Required:
+- iOS 15.0 or above
+- Xcode 13.0 or above
+
+In Xcode go to `File -> Add Packages...` and paste in the repo's url: `https://github.com/alessiorubicini/IslandAlertsForSwiftUI`.
+
+
+## License
+
+Copyright 2022 (©) Alessio Rubicini.
+
+The license for this repository is MIT License.
+
+Please see the [LICENSE](LICENSE) file for full reference.
