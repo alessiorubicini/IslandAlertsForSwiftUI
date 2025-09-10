@@ -12,9 +12,15 @@ private class Notch {
     
     private init() {}
     
+    enum NotchIphoneModels {
+        case iPhoneX, iPhoneXs, iPhoneXsMax, iPhoneXr, iPhone11, iPhone11Pro, iPhone11ProMax, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, iPhone13, iPhone13Pro, iPhone13ProMax, iPhone13Mini, iPhone14, iPhone14Plus
+    }
+    
     static var width: CGFloat {
         let bigNotchModels = ["X", "11", "12"]
-        if bigNotchModels.first(where: {UIDevice.modelName.contains($0)}) != nil {
+        if UIDevice.modelName == "iPhone 11" {
+            return 230
+        } else if bigNotchModels.first(where: {UIDevice.modelName.contains($0)}) != nil {
             return 210
         } else {
             return 160

@@ -74,6 +74,6 @@ extension View {
 struct NotchMediumAlertDebug_Previews: PreviewProvider {
     static var previews: some View {
         NotchMediumAlertExample()
-            .previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro"))
+            .previewDevice(PreviewDevice(rawValue: "iPhone 11"))
     }
 }

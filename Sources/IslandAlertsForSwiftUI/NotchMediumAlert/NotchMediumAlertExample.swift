@@ -12,7 +12,7 @@ public struct NotchMediumAlertExample: View {
     @State private var alert = false
     
     public var body: some View {
-        Button("Toggle alert") {
+        Button(UIDevice.modelName) {
             withAnimation {
                 alert.toggle()
             }
